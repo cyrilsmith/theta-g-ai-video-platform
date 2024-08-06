@@ -1,5 +1,10 @@
-Flask
+flask
 flask-jwt-extended
+werkzeug
 tensorflow
 opencv-python-headless
 numpy
+web3
+ipfshttpclient
+dlib
+pytest

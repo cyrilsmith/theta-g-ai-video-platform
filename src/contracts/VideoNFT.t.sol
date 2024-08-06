@@ -2,17 +2,19 @@
 pragma solidity ^0.8.0;
 
 import "forge-std/Test.sol";
-import "../src/VideoNFT.sol";
+import "src/contracts/VideoNFT.sol";
 
 contract VideoNFTTest is Test {
-    VideoNFT public videoNFT;
+    VideoNFT videoNFT;
 
     function setUp() public {
-        videoNFT = new VideoNFT();
+        address deployer = address(this);
+        videoNFT = new VideoNFT(deployer);
     }
 
     function testMint() public {
-        videoNFT.createNFT("ipfs://example-uri");
+        uint256 tokenId = videoNFT.createNFT("ipfs://test");
+        assertEq(tokenId, 0);
         assertEq(videoNFT.tokenCounter(), 1);
     }
 }

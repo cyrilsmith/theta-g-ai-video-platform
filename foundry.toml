@@ -1,8 +1,11 @@
-[default]
-src = "src"
-out = "out"
-libs = ["lib"]
+[profile.default]
+src = "./src"
+out = "./out"
 
 [rpc_endpoints]
-mainnet = "https://mainnet.infura.io/v3/c4d26f80153d415383d9b06e7eaec865"
-rinkeby = "https://rinkeby.infura.io/v3/c4d26f80153d415383d9b06e7eaec865"
+mainnet = "https://mainnet.infura.io/v3/847ad4f9b62142ea9e09e2e593c9d327"
+sepolia = "https://sepolia.infura.io/v3/847ad4f9b62142ea9e09e2e593c9d327"
+
+[profile.default.remappings]
+openzeppelin-contracts = "lib/openzeppelin-contracts"
+forge-std = "lib/forge-std"
