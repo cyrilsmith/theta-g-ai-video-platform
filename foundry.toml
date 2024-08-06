@@ -4,5 +4,5 @@ out = "out"
 libs = ["lib"]
 
 [rpc_endpoints]
-mainnet = "https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID"
-rinkeby = "https://rinkeby.infura.io/v3/YOUR_INFURA_PROJECT_ID"
+mainnet = "https://mainnet.infura.io/v3/c4d26f80153d415383d9b06e7eaec865"
+rinkeby = "https://rinkeby.infura.io/v3/c4d26f80153d415383d9b06e7eaec865"
